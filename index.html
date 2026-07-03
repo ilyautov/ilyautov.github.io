@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="yandex-verification" content="8b5a363ff4a5d00d">
+<title>ilyautov — open-source проекты для Claude и не только</title>
+<meta name="description" content="Пет-проекты и open-source инструменты Ильи: скиллы для Claude, humanizer-ru и другое.">
+<link rel="canonical" href="https://ilyautov.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ilyautov — open-source проекты">
+<meta property="og:description" content="Скиллы для Claude, humanizer-ru и другие open-source инструменты.">
+<meta property="og:url" content="https://ilyautov.github.io/">
+<meta property="og:locale" content="ru_RU">
+<style>
+  :root {
+    --bg: #0e1116;
+    --card: #161b22;
+    --border: #262c36;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #d2a8ff;
+    --accent-hover: #e6ccff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.25rem;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { width: 100%; max-width: 620px; }
+  .name { font-size: 2rem; font-weight: 700; margin: 0 0 .35rem; letter-spacing: -.01em; }
+  .tagline { color: var(--muted); margin: 0 0 2rem; font-size: 1.05rem; }
+  .projects { display: grid; gap: .85rem; margin: 0 0 2rem; }
+  a.card {
+    display: block;
+    padding: 1.1rem 1.25rem;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color .15s ease, transform .15s ease;
+  }
+  a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .card .t { font-weight: 650; margin-bottom: .2rem; }
+  .card .t .featured {
+    font-size: .72rem; font-weight: 600; color: var(--bg); background: var(--accent);
+    padding: .1rem .45rem; border-radius: 999px; margin-left: .5rem; vertical-align: middle;
+  }
+  .card .d { color: var(--muted); font-size: .95rem; }
+  .links { display: flex; gap: 1.25rem; flex-wrap: wrap; font-size: .95rem; }
+  .links a { color: var(--accent); text-decoration: none; }
+  .links a:hover { color: var(--accent-hover); text-decoration: underline; }
+  footer { margin-top: 2.5rem; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1 class="name">ilyautov</h1>
+  <p class="tagline">Open-source инструменты и скиллы для Claude. По-русски и не только.</p>
+
+  <div class="projects">
+    <a class="card" href="https://ilyautov.github.io/humanizer-ru/">
+      <div class="t">humanizer-ru <span class="featured">главный</span></div>
+      <div class="d">Скилл для Claude: убирает следы нейросети в русском тексте и возвращает живой голос.</div>
+    </a>
+    <a class="card" href="https://github.com/ilyautov/humanizer-it">
+      <div class="t">humanizer-it</div>
+      <div class="d">То же для итальянского языка.</div>
+    </a>
+    <a class="card" href="https://github.com/ilyautov?tab=repositories">
+      <div class="t">Все репозитории</div>
+      <div class="d">Остальные проекты на GitHub.</div>
+    </a>
+  </div>
+
+  <div class="links">
+    <a href="https://github.com/ilyautov">GitHub</a>
+    <a href="https://ilyautov.github.io/humanizer-ru/">Сайт humanizer-ru</a>
+  </div>
+
+  <footer>Статичная страница на GitHub Pages. Без трекеров и внешних скриптов.</footer>
+</main>
+</body>
+</html>
