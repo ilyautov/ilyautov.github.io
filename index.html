@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="yandex-verification" content="8b5a363ff4a5d00d">
 <title>ilyautov: open-source инструменты для ИИ-агентов</title>
-<meta name="description" content="MCP-серверы к российским сервисам (Wildberries, Ozon, Яндекс Маркет, Авито, hh.ru, VK, Диадок, СБИС, Честный знак, МойСклад), скиллы для Claude и инструменты вокруг агентов. Открытый код, лицензия MIT.">
+<meta name="description" content="MCP-серверы к российским сервисам (Wildberries, Ozon, Яндекс Маркет, Авито, hh.ru, VK, Диадок, СБИС, Честный знак, МойСклад), скиллы для Claude и инструменты вокруг агентов. Открытый код, лицензии MIT и Apache 2.0.">
 <link rel="canonical" href="https://ilyautov.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ilyautov: open-source инструменты для ИИ-агентов">
-<meta property="og:description" content="MCP-серверы к российским сервисам, скиллы для Claude и инструменты вокруг агентов. Открытый код, лицензия MIT.">
+<meta property="og:description" content="MCP-серверы к российским сервисам, скиллы для Claude и инструменты вокруг агентов. Открытый код, лицензии MIT и Apache 2.0.">
 <meta property="og:url" content="https://ilyautov.github.io/">
 <meta property="og:locale" content="ru_RU">
 <style>
@@ -69,11 +69,526 @@
   .links a:hover { color: var(--accent-hover); text-decoration: underline; }
   footer { margin-top: 2.5rem; color: var(--muted); font-size: .85rem; }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Открытые инструменты для ИИ-агентов",
+  "url": "https://ilyautov.github.io/",
+  "numberOfItems": 21,
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "marketplaces-mcp-ru",
+        "description": "Кабинеты Wildberries, Ozon, Яндекс Маркета и Авито в ИИ-ассистенте. 1022 метода, запись за гейтом безопасности.",
+        "url": "https://marketplaces-mcp-ru.aifrontier.tech/",
+        "codeRepository": "https://github.com/ilyautov/marketplaces-mcp-ru",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "ozon-mcp-ru",
+        "description": "Только Ozon Seller API: товары, заказы, цены, остатки, финансы, отзывы. 441 метод.",
+        "url": "https://marketplaces-mcp-ru.aifrontier.tech/ozon-api.html",
+        "codeRepository": "https://github.com/ilyautov/ozon-mcp-ru",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "wildberries-mcp-ru",
+        "description": "Только Wildberries: продажи, остатки, карточки, цены, отчёты. 307 методов.",
+        "url": "https://marketplaces-mcp-ru.aifrontier.tech/wildberries-api.html",
+        "codeRepository": "https://github.com/ilyautov/wildberries-mcp-ru",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "yandex-market-mcp-ru",
+        "description": "Только Яндекс Маркет: заказы, товары, цены, отчёты, отзывы. 165 методов.",
+        "url": "https://marketplaces-mcp-ru.aifrontier.tech/yandex-market-api.html",
+        "codeRepository": "https://github.com/ilyautov/yandex-market-mcp-ru",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "avito-mcp-ru",
+        "description": "Только Авито: объявления, чаты, заказы, автозагрузка, отзывы. 64 метода.",
+        "url": "https://marketplaces-mcp-ru.aifrontier.tech/avito-api.html",
+        "codeRepository": "https://github.com/ilyautov/avito-mcp-ru",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "business-mcp-ru",
+        "description": "Пять серверов одним набором: hh.ru, VK, Диадок, СБИС, Честный знак. 698 методов.",
+        "url": "https://business-mcp-ru.aifrontier.tech/",
+        "codeRepository": "https://github.com/ilyautov/business-mcp-ru",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "hh-mcp-ru",
+        "description": "Только hh.ru: вакансии и их публикация, отклики и приглашения, резюме, справочники, статистика зарплат. 133 метода.",
+        "url": "https://business-mcp-ru.aifrontier.tech/hh-api.html",
+        "codeRepository": "https://github.com/ilyautov/hh-mcp-ru",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "vk-mcp-ru",
+        "description": "Только VK: записи на стене, сообщества, диалоги, товары магазина, реклама и статистика. 373 метода.",
+        "url": "https://business-mcp-ru.aifrontier.tech/vk-api.html",
+        "codeRepository": "https://github.com/ilyautov/vk-mcp-ru",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "diadoc-mcp-ru",
+        "description": "Только Диадок (Контур): юридически значимый обмен документами, подписание, контрагенты, МЧД, статус документооборота. 114 методов.",
+        "url": "https://business-mcp-ru.aifrontier.tech/diadoc-api.html",
+        "codeRepository": "https://github.com/ilyautov/diadoc-mcp-ru",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "sbis-mcp-ru",
+        "description": "Только СБИС (Saby): документы и этапы их движения, подписание, сертификаты, сотрудники и организации. 45 команд.",
+        "url": "https://business-mcp-ru.aifrontier.tech/sbis-api.html",
+        "codeRepository": "https://github.com/ilyautov/sbis-mcp-ru",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "chestny-znak-mcp-ru",
+        "description": "Только Честный знак (ГИС МТ и СУЗ): коды маркировки, заказы на эмиссию, документы оборота, проверка кодов. 33 метода.",
+        "url": "https://business-mcp-ru.aifrontier.tech/chestny-znak-api.html",
+        "codeRepository": "https://github.com/ilyautov/chestny-znak-mcp-ru",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "moysklad-mcp-ru",
+        "description": "МойСклад по JSON API 1.2: остатки, товары, заказы, документы, отчёты. Мультикабинет, поиск по-русски.",
+        "url": "https://moysklad-mcp-ru.aifrontier.tech/",
+        "codeRepository": "https://github.com/ilyautov/moysklad-mcp-ru",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "schema-mcp-core",
+        "description": "Ядро, на котором собраны серверы: каталог эндпоинтов, классы доступа, HTTP-клиент, хранилище ключей.",
+        "url": "https://ilyautov.github.io/schema-mcp-core/",
+        "codeRepository": "https://github.com/ilyautov/schema-mcp-core",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "humanizer-ru",
+        "description": "Убирает следы нейросети в русском тексте и возвращает живой голос. Детерминированный сканер, 64 паттерна.",
+        "url": "https://humanizer-ru.aifrontier.tech/",
+        "codeRepository": "https://github.com/ilyautov/humanizer-ru",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "small-business-ru",
+        "description": "34 скилла для малого бизнеса: налоги УСН, сроки уплаты, проверка контрагента, деньги и найм.",
+        "url": "https://small-business-ru.aifrontier.tech/",
+        "codeRepository": "https://github.com/ilyautov/small-business-ru",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "humanizer-it",
+        "description": "То же для итальянского: кальки с английского, номинальный бюрократит, пропавшие частицы. 52 паттерна.",
+        "url": "https://ilyautov.github.io/humanizer-it/",
+        "codeRepository": "https://github.com/ilyautov/humanizer-it",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "consilium-principis",
+        "description": "Совет наставников из общественного достояния. Каждую цитату сверяет дословно с источником или молчит.",
+        "url": "https://aifrontier.tech/sistemy/consilium-principis/",
+        "codeRepository": "https://github.com/ilyautov/consilium-principis",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "cordon",
+        "description": "Слой между недоверенным текстом и действиями агента: снимает скрытый слой, помнит источник данных, держит вызовы в границах задачи.",
+        "url": "https://aifrontier.tech/sistemy/cordon/",
+        "codeRepository": "https://github.com/ilyautov/cordon",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "doc2md",
+        "description": "Пакетно превращает Word, Excel, PowerPoint, PDF, EPUB, RTF и CSV в чистый Markdown до того, как их прочитает агент.",
+        "url": "https://ilyautov.github.io/doc2md/",
+        "codeRepository": "https://github.com/ilyautov/doc2md",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "rusvoice",
+        "description": "Русская озвучка своим голосом: ударения, бренды, твёрдая «э», аббревиатуры, транслит. Слышно, что получится, до синтеза.",
+        "url": "https://ilyautov.github.io/rusvoice/",
+        "codeRepository": "https://github.com/ilyautov/rusvoice",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://www.apache.org/licenses/LICENSE-2.0",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "item": {
+        "@type": "SoftwareApplication",
+        "name": "hefest",
+        "description": "Рабочее место по химической безопасности завода: паспорта ГОСТ 30333, аварийные карточки, зоны АХОВ, СИЗ. Офлайн, без выдуманной нормативки.",
+        "url": "https://aifrontier.tech/sistemy/hefest/",
+        "codeRepository": "https://github.com/ilyautov/hefest",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS, Linux, Windows",
+        "license": "https://opensource.org/licenses/MIT",
+        "author": {
+          "@type": "Person",
+          "name": "Ilya Utov",
+          "url": "https://github.com/ilyautov"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <main>
   <h1 class="name">ilyautov</h1>
-  <p class="tagline">MCP-серверы к российским сервисам, скиллы для Claude и инструменты вокруг ИИ-агентов. Открытый код, лицензия MIT.</p>
+  <p class="tagline">MCP-серверы к российским сервисам, скиллы для Claude и инструменты вокруг ИИ-агентов. Открытый код, лицензии MIT и Apache 2.0.</p>
 
   <h2>Маркетплейсы</h2>
   <div class="projects">
