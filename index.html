@@ -60,6 +60,10 @@
     padding: .1rem .45rem; border-radius: 999px; margin-left: .5rem; vertical-align: middle;
   }
   .card .d { color: var(--muted); font-size: .95rem; }
+  .item { display: grid; gap: .3rem; }
+  .src { font-size: .85rem; padding-left: 1.15rem; }
+  .src a { color: var(--muted); text-decoration: none; }
+  .src a:hover { color: var(--accent); text-decoration: underline; }
   .links { display: flex; gap: 1.25rem; flex-wrap: wrap; font-size: .95rem; margin-top: 2.25rem; }
   .links a { color: var(--accent); text-decoration: none; }
   .links a:hover { color: var(--accent-hover); text-decoration: underline; }
@@ -73,87 +77,133 @@
 
   <h2>Маркетплейсы</h2>
   <div class="projects">
-    <a class="card" href="https://marketplaces-mcp-ru.aifrontier.tech/">
-      <div class="t">marketplaces-mcp-ru <span class="featured">главный</span></div>
-      <div class="d">Кабинеты Wildberries, Ozon, Яндекс Маркета и Авито в ИИ-ассистенте. 1022 метода, запись за гейтом безопасности.</div>
-    </a>
-    <a class="card" href="https://marketplaces-mcp-ru.aifrontier.tech/ozon-api.html">
-      <div class="t">ozon-mcp-ru</div>
-      <div class="d">Только Ozon Seller API: товары, заказы, цены, остатки, финансы, отзывы. 441 метод.</div>
-    </a>
-    <a class="card" href="https://marketplaces-mcp-ru.aifrontier.tech/wildberries-api.html">
-      <div class="t">wildberries-mcp-ru</div>
-      <div class="d">Только Wildberries: продажи, остатки, карточки, цены, отчёты. 307 методов.</div>
-    </a>
-    <a class="card" href="https://marketplaces-mcp-ru.aifrontier.tech/yandex-market-api.html">
-      <div class="t">yandex-market-mcp-ru</div>
-      <div class="d">Только Яндекс Маркет: заказы, товары, цены, отчёты, отзывы. 165 методов.</div>
-    </a>
-    <a class="card" href="https://marketplaces-mcp-ru.aifrontier.tech/avito-api.html">
-      <div class="t">avito-mcp-ru</div>
-      <div class="d">Только Авито: объявления, чаты, заказы, автозагрузка, отзывы. 64 метода.</div>
-    </a>
+    <div class="item">
+      <a class="card" href="https://marketplaces-mcp-ru.aifrontier.tech/">
+        <div class="t">marketplaces-mcp-ru <span class="featured">главный</span></div>
+        <div class="d">Кабинеты Wildberries, Ozon, Яндекс Маркета и Авито в ИИ-ассистенте. 1022 метода, запись за гейтом безопасности.</div>
+      </a>
+      <div class="src"><a href="https://github.com/ilyautov/marketplaces-mcp-ru">код на GitHub</a></div>
+    </div>
+    <div class="item">
+      <a class="card" href="https://marketplaces-mcp-ru.aifrontier.tech/ozon-api.html">
+        <div class="t">ozon-mcp-ru</div>
+        <div class="d">Только Ozon Seller API: товары, заказы, цены, остатки, финансы, отзывы. 441 метод.</div>
+      </a>
+      <div class="src"><a href="https://github.com/ilyautov/ozon-mcp-ru">код на GitHub</a></div>
+    </div>
+    <div class="item">
+      <a class="card" href="https://marketplaces-mcp-ru.aifrontier.tech/wildberries-api.html">
+        <div class="t">wildberries-mcp-ru</div>
+        <div class="d">Только Wildberries: продажи, остатки, карточки, цены, отчёты. 307 методов.</div>
+      </a>
+      <div class="src"><a href="https://github.com/ilyautov/wildberries-mcp-ru">код на GitHub</a></div>
+    </div>
+    <div class="item">
+      <a class="card" href="https://marketplaces-mcp-ru.aifrontier.tech/yandex-market-api.html">
+        <div class="t">yandex-market-mcp-ru</div>
+        <div class="d">Только Яндекс Маркет: заказы, товары, цены, отчёты, отзывы. 165 методов.</div>
+      </a>
+      <div class="src"><a href="https://github.com/ilyautov/yandex-market-mcp-ru">код на GitHub</a></div>
+    </div>
+    <div class="item">
+      <a class="card" href="https://marketplaces-mcp-ru.aifrontier.tech/avito-api.html">
+        <div class="t">avito-mcp-ru</div>
+        <div class="d">Только Авито: объявления, чаты, заказы, автозагрузка, отзывы. 64 метода.</div>
+      </a>
+      <div class="src"><a href="https://github.com/ilyautov/avito-mcp-ru">код на GitHub</a></div>
+    </div>
   </div>
 
   <h2>Деловые сервисы</h2>
   <div class="projects">
-    <a class="card" href="https://business-mcp-ru.aifrontier.tech/">
-      <div class="t">business-mcp-ru</div>
-      <div class="d">Пять серверов одним набором: hh.ru, VK, Диадок, СБИС, Честный знак. 698 методов.</div>
-    </a>
-    <a class="card" href="https://moysklad-mcp-ru.aifrontier.tech/">
-      <div class="t">moysklad-mcp-ru</div>
-      <div class="d">МойСклад по JSON API 1.2: остатки, товары, заказы, документы, отчёты. Мультикабинет, поиск по-русски.</div>
-    </a>
-    <a class="card" href="https://github.com/ilyautov/schema-mcp-core">
-      <div class="t">schema-mcp-core</div>
-      <div class="d">Ядро, на котором собраны серверы: каталог эндпоинтов, классы доступа, HTTP-клиент, хранилище ключей.</div>
-    </a>
+    <div class="item">
+      <a class="card" href="https://business-mcp-ru.aifrontier.tech/">
+        <div class="t">business-mcp-ru</div>
+        <div class="d">Пять серверов одним набором: hh.ru, VK, Диадок, СБИС, Честный знак. 698 методов.</div>
+      </a>
+      <div class="src"><a href="https://github.com/ilyautov/business-mcp-ru">код на GitHub</a></div>
+    </div>
+    <div class="item">
+      <a class="card" href="https://moysklad-mcp-ru.aifrontier.tech/">
+        <div class="t">moysklad-mcp-ru</div>
+        <div class="d">МойСклад по JSON API 1.2: остатки, товары, заказы, документы, отчёты. Мультикабинет, поиск по-русски.</div>
+      </a>
+      <div class="src"><a href="https://github.com/ilyautov/moysklad-mcp-ru">код на GitHub</a></div>
+    </div>
+    <div class="item">
+      <a class="card" href="https://github.com/ilyautov/schema-mcp-core">
+        <div class="t">schema-mcp-core</div>
+        <div class="d">Ядро, на котором собраны серверы: каталог эндпоинтов, классы доступа, HTTP-клиент, хранилище ключей.</div>
+      </a>
+    </div>
   </div>
 
   <h2>Скиллы для Claude</h2>
   <div class="projects">
-    <a class="card" href="https://humanizer-ru.aifrontier.tech/">
-      <div class="t">humanizer-ru</div>
-      <div class="d">Убирает следы нейросети в русском тексте и возвращает живой голос. Детерминированный сканер, 64 паттерна.</div>
-    </a>
-    <a class="card" href="https://small-business-ru.aifrontier.tech/">
-      <div class="t">small-business-ru</div>
-      <div class="d">34 скилла для малого бизнеса: налоги УСН, сроки уплаты, проверка контрагента, деньги и найм.</div>
-    </a>
-    <a class="card" href="https://github.com/ilyautov/humanizer-it">
-      <div class="t">humanizer-it</div>
-      <div class="d">То же для итальянского: кальки с английского, номинальный бюрократит, пропавшие частицы. 52 паттерна.</div>
-    </a>
-    <a class="card" href="https://github.com/ilyautov/consilium-principis">
-      <div class="t">consilium-principis</div>
-      <div class="d">Совет наставников из общественного достояния. Каждую цитату сверяет дословно с источником или молчит.</div>
-    </a>
+    <div class="item">
+      <a class="card" href="https://humanizer-ru.aifrontier.tech/">
+        <div class="t">humanizer-ru</div>
+        <div class="d">Убирает следы нейросети в русском тексте и возвращает живой голос. Детерминированный сканер, 64 паттерна.</div>
+      </a>
+      <div class="src"><a href="https://github.com/ilyautov/humanizer-ru">код на GitHub</a></div>
+    </div>
+    <div class="item">
+      <a class="card" href="https://small-business-ru.aifrontier.tech/">
+        <div class="t">small-business-ru</div>
+        <div class="d">34 скилла для малого бизнеса: налоги УСН, сроки уплаты, проверка контрагента, деньги и найм.</div>
+      </a>
+      <div class="src"><a href="https://github.com/ilyautov/small-business-ru">код на GitHub</a></div>
+    </div>
+    <div class="item">
+      <a class="card" href="https://ilyautov.github.io/humanizer-it/">
+        <div class="t">humanizer-it</div>
+        <div class="d">То же для итальянского: кальки с английского, номинальный бюрократит, пропавшие частицы. 52 паттерна.</div>
+      </a>
+      <div class="src"><a href="https://github.com/ilyautov/humanizer-it">код на GitHub</a></div>
+    </div>
+    <div class="item">
+      <a class="card" href="https://aifrontier.tech/sistemy/consilium-principis/">
+        <div class="t">consilium-principis</div>
+        <div class="d">Совет наставников из общественного достояния. Каждую цитату сверяет дословно с источником или молчит.</div>
+      </a>
+      <div class="src"><a href="https://github.com/ilyautov/consilium-principis">код на GitHub</a></div>
+    </div>
   </div>
 
   <h2>Инструменты</h2>
   <div class="projects">
-    <a class="card" href="https://github.com/ilyautov/cordon">
-      <div class="t">cordon</div>
-      <div class="d">Слой между недоверенным текстом и действиями агента: снимает скрытый слой, помнит источник данных, держит вызовы в границах задачи.</div>
-    </a>
-    <a class="card" href="https://github.com/ilyautov/doc2md">
-      <div class="t">doc2md</div>
-      <div class="d">Пакетно превращает Word, Excel, PowerPoint, PDF, EPUB, RTF и CSV в чистый Markdown до того, как их прочитает агент.</div>
-    </a>
-    <a class="card" href="https://github.com/ilyautov/rusvoice">
-      <div class="t">rusvoice</div>
-      <div class="d">Русская озвучка своим голосом: ударения, бренды, твёрдая «э», аббревиатуры, транслит. Слышно, что получится, до синтеза.</div>
-    </a>
-    <a class="card" href="https://github.com/ilyautov/hefest">
-      <div class="t">hefest</div>
-      <div class="d">Рабочее место по химической безопасности завода: паспорта ГОСТ 30333, аварийные карточки, зоны АХОВ, СИЗ. Офлайн, без выдуманной нормативки.</div>
-    </a>
+    <div class="item">
+      <a class="card" href="https://aifrontier.tech/sistemy/cordon/">
+        <div class="t">cordon</div>
+        <div class="d">Слой между недоверенным текстом и действиями агента: снимает скрытый слой, помнит источник данных, держит вызовы в границах задачи.</div>
+      </a>
+      <div class="src"><a href="https://github.com/ilyautov/cordon">код на GitHub</a></div>
+    </div>
+    <div class="item">
+      <a class="card" href="https://github.com/ilyautov/doc2md">
+        <div class="t">doc2md</div>
+        <div class="d">Пакетно превращает Word, Excel, PowerPoint, PDF, EPUB, RTF и CSV в чистый Markdown до того, как их прочитает агент.</div>
+      </a>
+    </div>
+    <div class="item">
+      <a class="card" href="https://github.com/ilyautov/rusvoice">
+        <div class="t">rusvoice</div>
+        <div class="d">Русская озвучка своим голосом: ударения, бренды, твёрдая «э», аббревиатуры, транслит. Слышно, что получится, до синтеза.</div>
+      </a>
+    </div>
+    <div class="item">
+      <a class="card" href="https://aifrontier.tech/sistemy/hefest/">
+        <div class="t">hefest</div>
+        <div class="d">Рабочее место по химической безопасности завода: паспорта ГОСТ 30333, аварийные карточки, зоны АХОВ, СИЗ. Офлайн, без выдуманной нормативки.</div>
+      </a>
+      <div class="src"><a href="https://github.com/ilyautov/hefest">код на GitHub</a></div>
+    </div>
   </div>
 
   <div class="links">
     <a href="https://github.com/ilyautov">GitHub</a>
     <a href="https://aifrontier.tech/">AI Frontier</a>
+    <a href="https://aifrontier.tech/sistemy/">Системы на сайте компании</a>
     <a href="https://github.com/ilyautov?tab=repositories">Все репозитории</a>
   </div>
 
