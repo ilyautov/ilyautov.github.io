@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>schema-mcp-core: ядро MCP-серверов над российскими деловыми API</title>
+<meta name="description" content="Каталог методов из YAML, классы доступа read/write/destructive, асинхронный HTTP-клиент, ключи на несколько кабинетов. На этом ядре собраны серверы к hh.ru, VK, Диадоку, СБИС и Честному знаку. MIT.">
+<link rel="canonical" href="https://ilyautov.github.io/schema-mcp-core/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="schema-mcp-core: ядро MCP-серверов над российскими деловыми API">
+<meta property="og:description" content="Сервер приносит каталог методов и тонкий server.py, всё остальное берёт отсюда.">
+<meta property="og:url" content="https://ilyautov.github.io/schema-mcp-core/">
+<meta property="og:locale" content="ru_RU">
+<link rel="stylesheet" href="../_style.css">
+</head>
+<body>
+<main>
+  <p class="up"><a href="/">← все проекты</a></p>
+
+  <h1>schema-mcp-core: ядро, на котором собраны серверы к российским API</h1>
+  <p class="lead">Сам по себе не подключает ничего. Сервер поверх него приносит каталог методов в <code>endpoints.yaml</code> и тонкий <code>server.py</code>, всё остальное берёт отсюда. Лицензия MIT.</p>
+
+  <h2>Зачем отдельный пакет</h2>
+  <p>Ядро это 2 200 строк, а сервер поверх него 66. Пять серверов живут отдельными репозиториями, и без общего ядра каждый нёс бы свою копию одного кода. Правка в безопасности тогда чинила бы один репозиторий и оставляла четыре сломанными.</p>
+
+  <h2>Что внутри</h2>
+  <ul>
+    <li><code>registry</code>: каталог методов из YAML, поиск обычными словами, пагинация.</li>
+    <li><code>safety</code>: класс доступа read, write или destructive у каждого метода.</li>
+    <li><code>client</code>: асинхронный HTTP, авторизация, повтор на 429, белый список доменов.</li>
+    <li><code>credentials</code>: ключи на несколько кабинетов, файл вне репозитория с правами 600.</li>
+    <li><code>tools</code>: готовый набор инструментов MCP: поиск, описание, вызов, кабинеты.</li>
+    <li><code>doctor</code>: отчёт «взлетит ли эта установка», список сервисов задаёт вызывающий.</li>
+    <li><code>paginate</code>: выкачать все страницы одним вызовом, только для чтения.</li>
+  </ul>
+
+  <h2>Чего ядро не делает</h2>
+  <p>Не ходит в сеть само, не хранит ключи в репозитории и не пишет в сервис без подтверждения: методы классов <code>write</code> и <code>destructive</code> требуют явного согласия на стороне вызова.</p>
+
+  <h2>Кто на нём стоит</h2>
+  <p>Серверы к <a href="https://github.com/ilyautov/hh-mcp-ru">hh.ru</a>, <a href="https://github.com/ilyautov/vk-mcp-ru">VK</a>, <a href="https://github.com/ilyautov/diadoc-mcp-ru">Диадоку</a>, <a href="https://github.com/ilyautov/sbis-mcp-ru">СБИС</a> и <a href="https://github.com/ilyautov/chestny-znak-mcp-ru">Честному знаку</a>. Все пять собраны одним набором в <a href="https://business-mcp-ru.aifrontier.tech/">business-mcp-ru</a>.</p>
+
+  <pre><code>pip install schema-mcp-core</code></pre>
+
+  <div class="links">
+    <a href="https://github.com/ilyautov/schema-mcp-core">Код на GitHub</a>
+    <a href="https://pypi.org/project/schema-mcp-core/">Пакет на PyPI</a>
+    <a href="/">Все проекты</a>
+  </div>
+  <footer>Статичная страница, без трекеров и внешних скриптов.</footer>
+</main>
+</body>
+</html>

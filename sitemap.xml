@@ -4,6 +4,24 @@
     <loc>https://ilyautov.github.io/</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ilyautov.github.io/doc2md/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ilyautov.github.io/rusvoice/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ilyautov.github.io/schema-mcp-core/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

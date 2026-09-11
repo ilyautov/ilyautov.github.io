@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>doc2md: Word, Excel, PowerPoint и PDF в Markdown для ИИ-агента</title>
+<meta name="description" content="Пакетно конвертирует docx, xlsx, pptx, pdf, epub, rtf и csv в чистый Markdown до того, как их прочитает агент. Одна папка, одна команда, единый формат на выходе. Открытый код, лицензия MIT.">
+<link rel="canonical" href="https://ilyautov.github.io/doc2md/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="doc2md: Word, Excel, PowerPoint и PDF в Markdown для ИИ-агента">
+<meta property="og:description" content="Пачка разноформатных документов превращается в чистый Markdown одной командой. Открытый код, лицензия MIT.">
+<meta property="og:url" content="https://ilyautov.github.io/doc2md/">
+<meta property="og:locale" content="ru_RU">
+<link rel="stylesheet" href="../_style.css">
+</head>
+<body>
+<main>
+  <p class="up"><a href="/">← все проекты</a></p>
+
+  <h1>doc2md: пачка документов в чистый Markdown до того, как её прочитает агент</h1>
+  <p class="lead">Word, Excel, PowerPoint, PDF, EPUB, RTF и CSV проходят через один конвертер и выходят одинаковым GitHub-Flavored Markdown. Открытый код, лицензия MIT.</p>
+
+  <h2>Зачем</h2>
+  <p>ИИ-агент читает каждый формат своим отдельным ридером. На пачке из пятнадцати договоров это пятнадцать вызовов инструмента, пятнадцать непохожих дампов и заметный расход токенов на построчное чтение. После doc2md на диске лежат пятнадцать <code>.md</code> в одном формате, и дальше агент работает по ним обычным поиском.</p>
+
+  <h2>Одна команда</h2>
+  <pre><code>npx skills add ilyautov/doc2md</code></pre>
+  <p>Дальше конвертер принимает один файл, список путей или папку целиком, рекурсивно:</p>
+  <pre><code>node convert.js ~/договоры/</code></pre>
+  <p>На выходе сводка построчно: <code>OK</code>, <code>ПРОПУСК</code> или <code>ОШИБКА</code> по каждому файлу. Молчаливых пропусков нет, иначе потерянный документ замечают через неделю.</p>
+
+  <h2>Чего он не делает</h2>
+  <p>Это не замена штатным скиллам <code>docx</code>, <code>pdf</code>, <code>xlsx</code> и <code>pptx</code>. Если нужно отредактировать один файл, сохранить форматирование или вытащить из него картинки, берите их. doc2md нужен ровно для случая «прочитать содержимое пачки и дальше с ней работать», особенно когда форматы смешанные.</p>
+
+  <h2>Кому пригодилось</h2>
+  <p>Бухгалтерии, отделу кадров и юристам на проверке контрагента: у всех периодически скапливаются папки разноформатных документов, которые надо превратить в текст, в том числе чтобы отдать той же нейросети.</p>
+
+  <div class="links">
+    <a href="https://github.com/ilyautov/doc2md">Код на GitHub</a>
+    <a href="https://skills.sh/ilyautov/doc2md">Каталог скиллов</a>
+    <a href="/">Все проекты</a>
+  </div>
+  <footer>Обёртка над <a href="https://github.com/firecrawl/anydoc" style="color:var(--muted)">firecrawl/anydoc</a>. Статичная страница, без трекеров.</footer>
+</main>
+</body>
+</html>
