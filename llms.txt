@@ -1,0 +1,25 @@
+# ilyautov: открытые инструменты для ИИ-агентов
+
+> Витрина 21 открытого проекта: MCP-серверы к российским сервисам (Wildberries, Ozon, Яндекс Маркет, Авито, hh.ru, VK, Диадок, СБИС, Честный знак, МойСклад), скиллы для Claude и инструменты подготовки данных.
+
+Автор: Илья Утов, лаборатория AI Frontier, Нижний Новгород.
+Лицензии: MIT у большинства проектов, Apache-2.0 у small-business-ru и rusvoice.
+
+## Страницы витрины
+
+- [Все проекты](https://ilyautov.github.io/): карточки 21 проекта с лицензией, звёздами и ссылкой на код.
+- [doc2md](https://ilyautov.github.io/doc2md/): пакетная конвертация docx, xlsx, pptx, pdf, epub, rtf и csv в чистый Markdown до того, как их прочитает агент.
+- [rusvoice](https://ilyautov.github.io/rusvoice/): слой правки русского текста перед озвучкой. Ударения, словарь брендов, твёрдая «э» в заимствованиях, аббревиатуры по буквам, числа прописью.
+- [schema-mcp-core](https://ilyautov.github.io/schema-mcp-core/): ядро MCP-серверов над российскими деловыми API. Каталог методов из YAML, классы доступа read/write/destructive, ключи на несколько кабинетов.
+
+## Сайты проектов
+
+- [humanizer-ru](https://humanizer-ru.aifrontier.tech/): убирает машинный след из русского текста, 64 признака и балл чистоты.
+- [marketplaces-mcp-ru](https://marketplaces-mcp-ru.aifrontier.tech/): Seller API Ozon, Wildberries, Яндекс Маркета и Авито.
+- [business-mcp-ru](https://business-mcp-ru.aifrontier.tech/): hh.ru, VK, Диадок, СБИС, Честный знак.
+- [moysklad-mcp-ru](https://moysklad-mcp-ru.aifrontier.tech/): МойСклад через JSON API 1.2.
+- [small-business-ru](https://small-business-ru.aifrontier.tech/): 34 скилла под операционку малого бизнеса.
+
+## Прочее
+
+- [Лаборатория AI Frontier](https://aifrontier.tech/): инженерная лаборатория прикладного ИИ, где эти проекты сделаны.
